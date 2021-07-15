@@ -15,11 +15,11 @@ public class Main {
         String selectedProduct = scanner.nextLine();
         machineInterface.selectProduct(Integer.parseInt(selectedProduct));
 
-        machineInterface.displayEnterCoinsMessage();
+        machineInterface.displaycoinInMessage();
 
         String usercoinIn = scanner.nextLine();
         int[] coinIn = coin.parseCoins(usercoinIn);
-        machineInterface.enterCoins(coinIn);
+        machineInterface.coinIn(coinIn);
 
         machineInterface.displayChangeMessage();
 

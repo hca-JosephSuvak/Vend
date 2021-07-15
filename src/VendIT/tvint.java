@@ -16,7 +16,7 @@ public class tvint implements vint {
         System.out.println("                                              ");
         for (Prdct product : Prdct.values()) {
             if (!Prdct.EMPTY.equals(product)) {
-                System.out.println("     " + product.getSelectionNumber() + "  " + product.name() + " - Price: "
+                System.out.println("     " + product.getSelectNum() + "  " + product.name() + " - Price: "
                         + product.getPrice() + "   ");
             }
         }
@@ -31,7 +31,7 @@ public class tvint implements vint {
     }
 
     @Override
-    public void displayEnterCoinsMessage() {
+    public void displaycoinInMessage() {
         System.out.println(" Please enter coins as follows: ");
         System.out.println(
                 " num of 5 cents coins,num of 10 cents coins,num of 20 cents coins,num of 50 cents coins,num of 100 cents coins  ");
@@ -42,9 +42,9 @@ public class tvint implements vint {
     }
 
     @Override
-    public void enterCoins(int... coins) {
+    public void coinIn(int... coins) {
         vreqsell request = new vreqsell(selectedProduct, coins);
-        change = controller.calcChangee(request);
+        change = controller.calcChange(request);
 
     }
 
@@ -52,11 +52,11 @@ public class tvint implements vint {
     public void displayChangeMessage() {
         System.out.println("                                              ");
         System.out.println("Your change is :" + change.getTotal() + "cents split as follows: ");
-        System.out.println("    100 cents coins: " + change.number100CentsCoins);
-        System.out.println("    50 cents coins: " + change.number50CentsCoins);
-        System.out.println("    20 cents coins: " + change.number20CentsCoins);
-        System.out.println("    10 cents coins: " + change.number10CentsCoins);
-        System.out.println("    5 cents coins: " + change.number5CentsCoins);
+        System.out.println("    Dollar: " + change.numberDOLLAR);
+        System.out.println("    50 cents coins: " + change.halfDollarCoins);
+        System.out.println("    25 cents coins: " + change.quarterCoins);
+        System.out.println("    10 cents coins: " + change.dimeCoins);
+        System.out.println("    5 cents coins: " + change.nickelCoins);
 
     }
 }

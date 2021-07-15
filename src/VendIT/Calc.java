@@ -2,7 +2,7 @@ package vendIT;
 
 public interface Calc {
 
-    int calculateTotal(coinBundle coinIn);
-    coinBundle calcChangee(int enteredByUserMoney);
+    int calcTotal(coinBundle coinIn);
+    coinBundle calcChange(int enteredByUserMoney);
 
 }

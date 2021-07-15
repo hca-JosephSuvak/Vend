@@ -3,27 +3,27 @@ package vendIT;
 public class CalcProps implements Calc {
 
     @Override
-    public int calculateTotal(coinBundle coinIn) {
+    public int calcTotal(coinBundle coinIn) {
         return coinIn.getTotal();
     }
 
     @Override
-    public coinBundle calcChangee(int amountMoneyToReturn) {
+    public coinBundle calcChange(int amountMoneyToReturn) {
         coinBundle change = new coinBundle(new int[5]);
         int remainingAmount = amountMoneyToReturn;
-        change.number100CentsCoins = remainingAmount / coin.HUNDRED_CENTS.getValue();
-        remainingAmount = remainingAmount % coin.HUNDRED_CENTS.getValue();
+        change.numberDOLLAR = remainingAmount / coin.DOLLAR.getValue();
+        remainingAmount = remainingAmount % coin.DOLLAR.getValue();
 
-        change.number50CentsCoins = remainingAmount / coin.FIFTY_CENTS.getValue();
+        change.halfDollarCoins = remainingAmount / coin.FIFTY_CENTS.getValue();
         remainingAmount = remainingAmount % coin.FIFTY_CENTS.getValue();
 
-        change.number20CentsCoins = remainingAmount / coin.TWENTY_CENTS.getValue();
-        remainingAmount = remainingAmount % coin.TWENTY_CENTS.getValue();
+        change.quarterCoins = remainingAmount / coin.TWENTYFIVE_CENTS.getValue();
+        remainingAmount = remainingAmount % coin.TWENTYFIVE_CENTS.getValue();
 
-        change.number10CentsCoins = remainingAmount / coin.TEN_CENTS.getValue();
+        change.dimeCoins = remainingAmount / coin.TEN_CENTS.getValue();
         remainingAmount = remainingAmount % coin.TEN_CENTS.getValue();
 
-        change.number5CentsCoins = remainingAmount / coin.FIVE_CENTS.getValue();
+        change.nickelCoins = remainingAmount / coin.FIVE_CENTS.getValue();
 
 
         return change;

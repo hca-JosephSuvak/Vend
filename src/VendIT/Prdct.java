@@ -2,18 +2,18 @@ package vendIT;
 
 public enum Prdct {
 
-    TWIX(1,100), COKE(2,50), WATER(3,30), SANDWICH(4,150), EMPTY(0,0);
+    SPRITE(1,100), COKE(2,50), WATER(3,30), DR_PEPPER(4,150), VITAMIN_WATER(0,0);
 
-    private int selectionNumber;
+    private int selectNum;
     private int price;
 
-    Prdct(int selectionNumber, int price){
-        this.selectionNumber = selectionNumber;
+    Prdct(int selectNum, int price){
+        this.selectNum = selectNum;
         this.price = price;
     }
 
-    public int getSelectionNumber(){
-        return selectionNumber;
+    public int getSelectNum(){
+        return selectNum;
     }
 
     public int getPrice(){
@@ -22,7 +22,7 @@ public enum Prdct {
 
     public static Prdct valueOf(int numberSelection){
         for(Prdct product: Prdct.values()){
-            if(numberSelection == product.getSelectionNumber()){
+            if(numberSelection == product.getSelectNum()){
                 return product;
             }
         }

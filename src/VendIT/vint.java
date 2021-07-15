@@ -6,9 +6,9 @@ public interface vint {
 
     void selectProduct(int product);
 
-    void displayEnterCoinsMessage();
+    void displaycoinInMessage();
 
-    void enterCoins(int... coins);
+    void coinIn(int... coins);
 
     void displayChangeMessage();
 }
