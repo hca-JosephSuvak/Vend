@@ -1,4 +1,4 @@
-package VendIT;
+package vendIT;
 
 public enum Prdct {
 

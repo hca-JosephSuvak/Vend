@@ -1,14 +1,14 @@
-package VendIT;
+package vendIT;
 
 public class CalcProps implements Calc {
 
     @Override
-    public int calculateTotal(coinBundle enteredCoins) {
-        return enteredCoins.getTotal();
+    public int calculateTotal(coinBundle coinIn) {
+        return coinIn.getTotal();
     }
 
     @Override
-    public coinBundle calculateChange(int amountMoneyToReturn) {
+    public coinBundle calcChangee(int amountMoneyToReturn) {
         coinBundle change = new coinBundle(new int[5]);
         int remainingAmount = amountMoneyToReturn;
         change.number100CentsCoins = remainingAmount / coin.HUNDRED_CENTS.getValue();

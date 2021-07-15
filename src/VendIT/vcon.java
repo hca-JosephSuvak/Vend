@@ -1,5 +1,5 @@
-package VendIT;
+package vendIT;
 
 public interface vcon {
-    coinBundle calculateChange(vreqsell request);
+    coinBundle calcChangee(vreqsell request);
 }

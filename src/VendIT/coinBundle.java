@@ -1,4 +1,4 @@
-package VendIT;
+package vendIT;
 
 public class coinBundle {
 	
@@ -8,12 +8,12 @@ public class coinBundle {
     public int number50CentsCoins;
     public int number100CentsCoins;
 
-    public coinBundle(int... enteredCoins) {
-        this.number5CentsCoins = enteredCoins[0];
-        this.number10CentsCoins = enteredCoins[1];
-        this.number20CentsCoins = enteredCoins[2];
-        this.number50CentsCoins = enteredCoins[3];
-        this.number100CentsCoins = enteredCoins[4];
+    public coinBundle(int... coinIn) {
+        this.number5CentsCoins = coinIn[0];
+        this.number10CentsCoins = coinIn[1];
+        this.number20CentsCoins = coinIn[2];
+        this.number50CentsCoins = coinIn[3];
+        this.number100CentsCoins = coinIn[4];
 
     }
 

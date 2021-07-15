@@ -1,7 +1,7 @@
-package VendIT;
+package vendIT;
 import java.util.Scanner;
-import VendIT.tvint;
-import VendIT.vint;
+import vendIT.tvint;
+import vendIT.vint;
 
 public class Main {
 
@@ -17,9 +17,9 @@ public class Main {
 
         machineInterface.displayEnterCoinsMessage();
 
-        String userEnteredCoins = scanner.nextLine();
-        int[] enteredCoins = coin.parseCoins(userEnteredCoins);
-        machineInterface.enterCoins(enteredCoins);
+        String usercoinIn = scanner.nextLine();
+        int[] coinIn = coin.parseCoins(usercoinIn);
+        machineInterface.enterCoins(coinIn);
 
         machineInterface.displayChangeMessage();
 

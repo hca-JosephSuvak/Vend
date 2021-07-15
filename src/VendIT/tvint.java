@@ -1,4 +1,4 @@
-package VendIT;
+package vendIT;
 
 public class tvint implements vint {
 
@@ -44,7 +44,7 @@ public class tvint implements vint {
     @Override
     public void enterCoins(int... coins) {
         vreqsell request = new vreqsell(selectedProduct, coins);
-        change = controller.calculateChange(request);
+        change = controller.calcChangee(request);
 
     }
 

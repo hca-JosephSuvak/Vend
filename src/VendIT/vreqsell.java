@@ -1,13 +1,13 @@
-package VendIT;
+package vendIT;
 
 public class vreqsell {
 
     public Prdct product;
-    public coinBundle enteredCoins;
+    public coinBundle coinIn;
 
-    public vreqsell(int selectedProduct, int... enteredCoins) {
+    public vreqsell(int selectedProduct, int... coinIn) {
     	this.product = Prdct.valueOf(selectedProduct);
-        this.enteredCoins = new coinBundle(enteredCoins);
+        this.coinIn = new coinBundle(coinIn);
     }
 }
 
