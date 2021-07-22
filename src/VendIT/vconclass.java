@@ -1,4 +1,4 @@
-package VendIT;
+package vendIT;
 
 import vendIT.CalcProps;
 import vendIT.Calc;

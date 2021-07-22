@@ -1,6 +1,6 @@
 package vendIT;
 
-import VendIT.vconclass;
+import vendIT.vconclass;
 import vendIT.Prdct;
 import vendIT.vint;
 import vendIT.vcon;
@@ -9,7 +9,7 @@ import vendIT.vreqsell;
 
 public class tvint implements vint {
 
-    private vcon controller = new vconclass();
+    private vcon controller = new vendIT.vconclass();
     private int selectedProduct;
     private coinBundle change;
 

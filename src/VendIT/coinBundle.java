@@ -1,5 +1,4 @@
 package vendIT;
-
 import vendIT.coin;
 
 public class coinBundle {
