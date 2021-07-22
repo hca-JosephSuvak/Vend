@@ -1,5 +1,9 @@
 package vendIT;
 
+import vendIT.coinBundle;
+import vendIT.Calc;
+import vendIT.coin;
+
 public class CalcProps implements Calc {
 
     @Override

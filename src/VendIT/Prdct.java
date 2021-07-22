@@ -2,9 +2,10 @@ package vendIT;
 
 public enum Prdct {
 
-    SPRITE(1,100), COKE(2,50), WATER(3,30), DR_PEPPER(4,150), VITAMIN_WATER(0,0);
+    SPRITE(1,100), COKE(2,50), WATER(3,30), DR_PEPPER(4,150), VITAMIN_WATER(12,75), Empty(0,0);
 
-    private int selectNum;
+    public static final vendIT.Prdct EMPTY = Empty;
+    public int selectNum;
     private int price;
 
     Prdct(int selectNum, int price){

@@ -1,4 +1,10 @@
-package vendIT;
+package VendIT;
+
+import vendIT.CalcProps;
+import vendIT.Calc;
+import vendIT.coinBundle;
+import vendIT.vcon;
+import vendIT.vreqsell;
 
 public class vconclass implements vcon {
 

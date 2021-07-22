@@ -1,5 +1,7 @@
 package vendIT;
 
+import vendIT.coinBundle;
+
 public interface Calc {
 
     int calcTotal(coinBundle coinIn);

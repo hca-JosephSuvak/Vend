@@ -1,5 +1,8 @@
 package vendIT;
 
+import vendIT.Prdct;
+import vendIT.coinBundle;
+
 public class vreqsell {
 
     public Prdct product;

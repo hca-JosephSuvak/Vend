@@ -1,5 +1,7 @@
 package vendIT;
 
+import vendIT.coin;
+
 public class coinBundle {
 	
     public int nickelCoins;
