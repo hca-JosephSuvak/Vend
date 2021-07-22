@@ -1,1 +1,0 @@
-//Insert Soda Properties and Master Class here.

@@ -1,1 +1,0 @@
-// Are dollars used? If so, parse it.
